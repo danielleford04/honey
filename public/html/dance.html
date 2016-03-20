@@ -1,0 +1,58 @@
+<html ng-App="myApp">
+<head>
+	<title>Honey Barbera</title>
+	<link type="text/css" rel="stylesheet" href="../css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+</head>
+<body class="dance" ng-controller="myCtrl">>
+	<div class="nav">
+		<div class="logo">
+			<a href="index.html"><span class="logoHoney">HONEY</span><br>
+			<span class="logoBarbera">&nbspBarbera</span></a>
+		</div>
+		<ul>
+			<li><a href="model.html">Model</a></li>
+			<li><a href="dance.html">Dance</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="lightbox" ng-show="bey">
+		<video height="80%" src="../images/dance/beyonce.mp4" controls ></video> 
+		<a href=""><p ng-click="playBey()">back to videos</p></a>
+	</div>
+	<div class="lightbox" ng-show="shuffle">
+		<video height="80%" src="../images/dance/shuffle.m4v" controls ></video> 
+		<a href=""><p ng-click="playShuffle()">back to videos</p></a>
+	</div>
+	<div class="lightbox" ng-show="scott">
+		<video height="80%" src="../images/dance/scott.m4v" controls ></video> 
+		<a href=""><p ng-click="playScott()">back to videos</p></a>
+	</div>
+	<div class="lightbox" ng-show="banjo">
+		<video height="80%" src="../images/dance/banjo.m4v" controls ></video> 
+		<a href=""><p ng-click="playBanjo()">back to videos</p></a>
+	</div>
+
+	<div class="hero">
+		<!-- <video height="60%" src="../images/halloween.mp4" controls ></video> -->
+		<img ng-click="playBey()" src="../images/dance/beyoncescreen.jpg"></img>
+	</div>
+	<div class="smalls">
+<!-- 		<span>
+		<iframe width="33%" height="35%" src="https://www.youtube.com/embed/Q71i0Vl1-Xo" frameborder="0" allowfullscreen></iframe></span>
+		<span>
+		<iframe width="33%" height="35%" src="https://www.youtube.com/embed/6pPmHmxtCD4" frameborder="0" allowfullscreen></iframe><span> -->
+		<span><img ng-click="playShuffle()" src="../images/dance/shufflescreen.jpg"></img></span>
+		<span><img ng-click="playScott()" src="../images/dance/scottscreen.jpg"></img></span>
+		<span><img ng-click="playBanjo()" src="../images/dance/banjoscreen.jpg"></img></span>
+	</div>
+
+	<footer>
+		<span class="ftleft spacing">&copy; 2016 Honey Barbera</span><span class="ftright spacing">Design by <a href="www.dmford.com">DFORD</a></span>
+	</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
