@@ -151,6 +151,9 @@ footer a {
 	padding: 0 35px 0 35px;
 	}
 
+	body {
+		overflow: visible;
+	}
 	.dance {
 		overflow: visible;
 	}
