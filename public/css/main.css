@@ -154,33 +154,25 @@ footer a {
 	.dance {
 		overflow: visible;
 	}
-	.dance .smalls span {
-		display: block;
-		text-align: center;
-
-	}
-	.dance .smalls img {
-		height: 50% !important;
-		width: 85% !important;
-		margin: 5px;
-
-	}
-
-	.dance .hero img {
-		width: 85%;
-
-	}
 
 	.dance footer {
 		position: inherit;
 	}
 
+	.dance .smalls {
+		text-align: center;
+	}
+
+	.dance .smalls video {
+		width: 85%;
+		height: auto;
+		text-align: center;
+		padding-top: 50px;
+	}
+
 	.dance video {
 		width: 85%;
 
-	}
-	.dance .lightbox {
-				height: 90%;
 	}
 
 }
@@ -189,6 +181,10 @@ footer a {
 	.home .barbera {
 	font-size: 12vh;
 	bottom: 35vh;
+	}
+
+	.slider-pagination {
+		display: none;
 	}
 }
 
@@ -206,11 +202,7 @@ footer a {
 	}
 
 	.contact img {
-	width: 80%;
-	right: 0;
-	left: 0;
-	display: block;
-	max-height: 50%;
+	display: none;
 	}
 	.contact frame {
 	height: 80%;
@@ -218,10 +210,19 @@ footer a {
 	width: 100%;
 }
 
+	.contactBox {
+		position: static;
+		padding-top: 0;
+		margin-left: 0;
+		width: auto;
+		z-index: 0;
+	}
+
 	.logo {
 		width: 100%;
 		text-align: center;
 		padding-bottom: 10px;
+		padding-left: 0;
 	}
 
 	.dance .hero {
@@ -230,12 +231,23 @@ footer a {
 	.dance .smalls img {
 		height: 30% !important;
 	}
+
+	.slider-pagination {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 600px) {
 	.contact img {
 		float: left;
-			width: 33%;
+		width: 33%;
+	}
+
+	.contactBox {
+		position: absolute;
+		padding-top: 20vh;
+		width: 66%;
+		margin-left: 33%;
 	}
 }
 
@@ -248,9 +260,25 @@ footer a {
 	font-size: 24vw;
 	padding: 25vh 0 25vh 0;
 	}
+
+	.nav ul {
+		padding: 0;
+	}
 	.nav ul li {
 	padding: 0 80px 0 80px;
 	}
+
+	.ftleft {
+	float: none;
+	display: block;
+	text-align: center;
+}
+
+.ftright {
+	float: none;
+	display: block;
+	text-align: center;
+}
 }
 
 /* ---------model ---------*/
@@ -376,7 +404,16 @@ html,body {
 	padding-bottom: 5px;
 }
 
-.dance .hero img {
+.hero video {
+	height: 100%;
+}
+
+.smalls video {
+	width: 33%;
+	height: 200px;
+}
+
+/*.dance .hero img {
 	height: 100%;
 }
 
@@ -392,11 +429,11 @@ html,body {
 
 .dance .smalls img:hover {
 	opacity: .45;
-}
+}*/
 
 /* --------lightbox----*/
 
-.lightbox {
+/*.lightbox {
 	text-align: center;
 	height: 100%;
 }
@@ -410,16 +447,14 @@ html,body {
 
 .lightbox a {
 	text-decoration: none;
-}
+}*/
 
 /* ---------contact -----*/
 
 .contactBox {
-	position: absolute;
-	padding-top: 20vh;
-	width: 66%;
+
 	color: white;
-	margin-left: 33%;
+	
 	text-align: center;
 }
 
