@@ -147,13 +147,18 @@ footer a {
 
 
 @media screen and (max-width: 900px) {
+	body {
+		height: auto;
+	}
+
+	footer {
+		position: inherit;
+	}
+
 	.nav ul li {
 	padding: 0 35px 0 35px;
 	}
 
-	body {
-		overflow: visible;
-	}
 	.dance {
 		overflow: visible;
 	}
